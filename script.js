@@ -10,8 +10,8 @@
 var index = 0;
 var pictures = [
                 {
-                    url: "blank",
-                    title: "blank"
+                    url: "http://www.sinakcorp.com/images/Hawaii%20Hall.jpg",
+                    title: "Hawaii Hall"
                 },
                 {
                     url: "http://www.midpac.edu/mypueo/downloads/hs/MidPacific_complete_stacked%20(2).jpg",
