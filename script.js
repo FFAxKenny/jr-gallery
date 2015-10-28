@@ -10,12 +10,24 @@
 var index = 0;
 var pictures = [
                 {
+                    url: "blank",
+                    title: "blank"
+                },
+                {
                     url: "http://www.midpac.edu/mypueo/downloads/hs/MidPacific_complete_stacked%20(2).jpg",
                     title: "Midpack"
                 },
                 {
                     url: "http://www.hawaii-all-inclusive.net/files/3318241/uploaded/all-inclusive-waikiki-hawaii-vacation-package.jpg",
                     title: "Hawaii"
+                },
+                {
+                    url: "http://yumamom.com/wp-content/uploads/2015/05/LEGO.jpg",
+                    title: "Everything is Awesome!"
+                },
+                {
+                    url: "http://www.devleague.com/img/dev_league_emblem.png",
+                    title: "Devleague Logo"
                 }
                ]
 
@@ -28,12 +40,21 @@ var changePicture = function(){
     document.getElementById("picture-link").innerHTML = pictures[index].url;
     document.getElementById("picture-link").href = pictures[index].url;
 
-    // Update the index
-    index = index + 1;
 };
 
 
 // Do changePicture() when the element 'forward' is clicked
 document.getElementById("forward").addEventListener("click", function(){
+    // Update the index
+    index = index + 1;
+
+    changePicture();
+});
+
+// Do changePicture() when the element 'back' is clicked
+document.getElementById("back").addEventListener("click", function(){
+    // Update the index before we display the picture
+    index = index + -1;
+
     changePicture();
 });
