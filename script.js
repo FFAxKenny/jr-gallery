@@ -46,7 +46,12 @@ var changePicture = function(){
 // Do changePicture() when the element 'forward' is clicked
 document.getElementById("forward").addEventListener("click", function(){
     // Update the index
-    index = index + 1;
+    if(index === pictures.length-1){
+        alert("You're at the end of the gallery already!");
+    }
+    else{
+        index = index + 1;
+    }
 
     changePicture();
 });
@@ -54,7 +59,12 @@ document.getElementById("forward").addEventListener("click", function(){
 // Do changePicture() when the element 'back' is clicked
 document.getElementById("back").addEventListener("click", function(){
     // Update the index before we display the picture
-    index = index + -1;
+    if(index === 0){
+        alert("You're at the beginning of the gallery already!");
+    }
+    else{
+        index = index - 1;
+    }
 
     changePicture();
 });
