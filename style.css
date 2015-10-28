@@ -1,4 +1,8 @@
 /* Navigation Arrow Styling */
+
+body{
+    text-align:center;
+}
 .nav-arrow{
     width:50px;
     padding-left:50px;
