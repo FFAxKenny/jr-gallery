@@ -15,7 +15,7 @@ var pictures = [
                 },
                 {
                     url: "http://www.midpac.edu/mypueo/downloads/hs/MidPacific_complete_stacked%20(2).jpg",
-                    title: "Midpack"
+                    title: "Midpac"
                 },
                 {
                     url: "http://www.hawaii-all-inclusive.net/files/3318241/uploaded/all-inclusive-waikiki-hawaii-vacation-package.jpg",
